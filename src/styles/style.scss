@@ -1,0 +1,262 @@
+:root {
+  --accent-color: #6c63ff;
+  --second-color: #f9f7fe;
+  --third-color: #272142;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Poppins, sans-serif;
+}
+
+.row img {
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.home-page,
+.contacts-page {
+  background-color: var(--second-color);
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    gap: 25px;
+  }
+
+  &__paragraph {
+    font-size: 25px;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+
+    @media (min-width: 768px) {
+      font-size: 25px;
+      width: 516px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1000px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: white;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: calc(100vh / 4);
+      left: 20px;
+      flex-direction: column;
+      width: fit-content;
+      height: calc(100vh / 2);
+    }
+  }
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    gap: 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__image {
+    height: 300px;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @media (min-width: 1200px) {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+
+    @media (min-width: 768px) {
+      font-style: 45px;
+    }
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--third-color);
+    opacity: 70%;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &__skill {
+    width: max-content;
+    padding: 5px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--second-color);
+  }
+}
+
+.projects-page {
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+  }
+
+  &__subtitle {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    text-align: center;
+    color: var(--accent-color);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.contacts-page {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    gap: 25px;
+  }
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+  }
+
+  &__subtitle {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+  }
+}
+
+.nav-link {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--accent-color);
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.main_btn {
+  width: fit-content;
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.main_btn:hover {
+  background-color: var(--second-color);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
