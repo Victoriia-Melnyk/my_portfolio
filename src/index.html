@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/style.scss" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="home-page">
     <div class="container d-flex flex-column flex-grow-1">
@@ -62,63 +62,54 @@
                   class="nav-link active"
                   href="index.html"
                   title="Homepage"
-                >
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="about.html"
-                  title="About me"
-                >
-                About
-                </a>
+                >Home</a>
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="projects.html"
                   title="My projects"
-                >
-                Portfolio
-                </a>
+                >Portfolio</a>
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="contacts.html"
                   title="My contacts"
-                >
-                  Contacts
-                </a>
+                >Contacts</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="home-page__content">
-        <div>
-          <p class="home-page__paragraph">Hi, I am</p>
-          <h1 class="home-page__title">Viktoria Melnyk</h1>
+      <div
+        class="profile-card d-flex flex-column align-items-center justify-content-center gap-2"
+      >
+        <div class="profile-card__name">Hi 👋 I'm Viktoria Melnyk</div>
+        <div class="profile-card__role">
+          · Full Stack Developer ·
+          <br />
+          Ukraine 🇺🇦 → Portugal 🇵🇹
         </div>
-        <h2 class="home-page__subtitle">
-          Ukrainian Frontend Developer, based in Portugal, creating modern and
-          interactive web experiences through pet projects and continuous
-          learning.
-        </h2>
-        <a href="about.html" class="btn btn-lg main_btn">Get started</a>
-        <div class="home-page__socials rounded">
-          <a href="https://github.com/Victoriia-Melnyk" target="_blank">
-            <i class="fa-brands fa-github fa-2xl" style="color: #000000"></i>
-          </a>
-          <a href="https://www.linkedin.com/feed/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000"></i>
-          </a>
-          <a href="https://facebook.com/" target="_blank">
-            <i class="fa-brands fa-facebook fa-2xl" style="color: #000000"></i>
-          </a>
+        <div class="profile-card__desc">
+          Passionate about beautiful, user-friendly web. I build pet projects
+          with JavaScript, React, Bootstrap, Node.js and love learning new
+          things. Ready to join a team and create something great together!
         </div>
+        <div class="profile-card__skills">
+          <span class="profile-card__skill">HTML</span>
+          <span class="profile-card__skill">CSS</span>
+          <span class="profile-card__skill">SCSS</span>
+          <span class="profile-card__skill">JavaScript</span>
+          <span class="profile-card__skill">Bootstrap</span>
+          <span class="profile-card__skill">Tailwind CSS</span>
+          <span class="profile-card__skill">React</span>
+          <span class="profile-card__skill">TypeScript</span>
+          <span class="profile-card__skill">Node.js</span>
+        </div>
+        <a href="projects.html" class="btn btn-lg profile-card__btn mt-2">
+          View all projects
+        </a>
       </div>
     </div>
   </body>
